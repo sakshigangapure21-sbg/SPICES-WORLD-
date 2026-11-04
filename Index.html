@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spice World - Online Spices Shopping 😋</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+       <nav>
+        <div class="brand">
+<img src="logo.jpg" alt="SAKVERA logo">
+
+
+    <div class="logo">
+        SAKVÉRA PREMIUM SPICES
+        <p>The Essence of Indian Flavours</p>
+    </div>
+</div>
+            <a href="#home">🏠Home</a>
+            <a href="#about">🧾About</a>
+            <a href="#products">📦Products</a>
+            <a href="#contact">📱Contact</a>
+        </nav>
+
+        <button class="cart-btn" onclick="showCart()">
+            🛒 Cart (<span id="cart-count">0</span>)
+        </button>
+    </header>
+
+    <!-- HOME -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <p class="tagline">THE TASTE OF INDIA</p>
+            <h1>Bring Home The<br>Magic Of Spices</h1>
+            <p>
+                Discover pure, fresh and authentic Indian spices
+                that make every meal special.
+            </p>
+            <a href="#products" class="shop-btn">Shop Now →</a>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+        <h2>Welcome To Spice World</h2>
+        <p>
+            Spice World brings you a delicious collection of
+            authentic Indian spices. We believe that every spice
+            has a story and every meal deserves natural flavour.
+            Explore our products and make your cooking special.
+        </p>
+    </section>
+
+    <!-- CATEGORIES -->
+    <section class="categories">
+        <h2>Our Categories</h2>
+
+        <div class="category-list">
+            <div class="category">🌶️<p>Chilli Spices</p></div>
+            <div class="category">🟡<p>Turmeric</p></div>
+            <div class="category">🌿<p>Whole Spices</p></div>
+            <div class="category">🍛<p>Masala Mix</p></div>
+            <div class="category">🍀<p>Coriander power</p></div>
+             <div class="category">🥓<p>cinnamon</p></div>
+        </div>
+    </section>
+
+    <!-- PRODUCTS -->
+    
+<!-- PRODUCTS SECTION -->
+<section class="products" id="products">
+    <h2>Our Best Selling Spices</h2>
+    <p class="subtitle">
+        Explore Our Delicious Spice Collection
+    </p>
+    <div class="product-list">
+        <div class="product-card">
+            <img src="CHILLI.jpg" alt="Red Chilli">
+            <h3>Red Chilli Powder</h3>
+            <p class="price">₹180</p>
+            <button class="add-btn" onclick="addToCart(1)">
+    Add to Cart
+</button>
+        </div>
+
+        <div class="product-card">
+            <img src="TURMERIC.jpg" alt="Turmeric">
+            <h3>Turmeric Powder</h3>
+            <p class="price">₹150</p>
+           <button class="add-btn" onclick="addToCart(2)">
+    Add to Cart
+</button>
+        </div>
+
+        <div class="product-card">
+            <img src="GARAM MASALA.jpg" alt="Garam Masala">
+            <h3>Garam Masala</h3>
+            <p class="price">₹150</p>
+            <button class="add-btn" onclick="addToCart(3)">
+    Add to Cart
+</button>
+        </div>
+
+        <div class="product-card">
+            <img src="black paper.jpg" alt="Black Pepper">
+            <h3>Black Pepper</h3>
+            <p class="price">₹180</p>
+            <button class="add-btn" onclick="addToCart(4)">
+    Add to Cart
+</button>
+        </div>
+
+        <div class="product-card">
+            <img src="green charamon.jpg" alt="Green Cardamom">
+            <h3>Green Cardamom</h3>
+            <p class="price">₹250</p>
+            <button class="add-btn" onclick="addToCart(5)">
+    Add to Cart
+</button>
+        </div>
+
+        <div class="product-card">
+            <img src="saffron.jpg" alt="Saffron">
+            <h3>Saffron</h3>
+            <p class="price">₹250</p>
+            <button class="add-btn" onclick="addToCart(6)">
+    Add to Cart
+</button>
+        </div>
+
+    </div>
+</section>
+
+
+    <!-- CART -->
+    <section class="cart-section" id="cart-section">
+        <h2>Shopping Cart 🛒</h2>
+        <div id="cart-items">Your cart is empty.</div>
+        <h3>Total: ₹<span id="total">0</span></h3>
+        <button class="checkout-btn" onclick="checkout()">
+            Proceed to Checkout
+        </button>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: spiceworld@gmail.com</p>
+        <p>Phone: +91 9699460561</p>
+        <p>Address: Maharashtra, India</p>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2026 Spice World. All Rights Reserved.</p>
+        <p>Made with ❤️ for Spice Lovers</p>
+    </footer>
+     <script src="script.js"></script>
+</body>
+</html>
